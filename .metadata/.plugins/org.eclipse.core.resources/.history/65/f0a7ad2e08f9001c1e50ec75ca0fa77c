@@ -1,0 +1,28 @@
+package bubble.test.ex02;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class BubbleFrame extends JFrame {
+
+	private JLabel backgroundMap;
+
+	public BubbleFrame() {
+		setSize(1000, 640);
+		getContentPane().setLayout(null);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+
+	private void initObject() {
+		
+	}
+	
+	private void initSetting() {
+		
+	}
+	public static void main(String[] args) {
+		new BubbleFrame();
+	}
+}

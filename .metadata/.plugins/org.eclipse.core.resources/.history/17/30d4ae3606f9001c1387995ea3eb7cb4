@@ -1,0 +1,15 @@
+package bubble.test.ex01;
+
+import javax.swing.JFrame;
+
+
+//윈도우 창이 되었음
+// 기본적으로 내부에 패널을 하나 들고 있는 것이다. 
+public class BubbleFrame extends JFrame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

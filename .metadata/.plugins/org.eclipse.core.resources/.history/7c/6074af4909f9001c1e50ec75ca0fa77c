@@ -1,0 +1,13 @@
+package bubble.test.ex02;
+
+import javax.swing.JLabel;
+
+public class player extends JLabel {
+
+	private int x;
+	private int y;
+
+	public player() {
+
+	}
+}
