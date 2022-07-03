@@ -3,4 +3,15 @@
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="bubble.test.ex01.BubbleFrame"/>
+    <fullyQualifiedTypeName name="bubble.test.ex02.BubbleFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="javax.swing.JLabel"/>
+    <fullyQualifiedTypeName name="bubble.test.ex02.player"/>
+    <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
+    <fullyQualifiedTypeName name="bubble.test.ex02.Player"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.dtd.models.ContentModelValidator"/>
+    <fullyQualifiedTypeName name="bubble.test.ex03.Moveable"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
 </qualifiedTypeNameHistroy>

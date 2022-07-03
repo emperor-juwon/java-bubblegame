@@ -30,6 +30,16 @@
 		<item value="org.eclipse.tm.terminal.feature:10.3.0.202104042017"/>
 		<item value="org.eclipse.tm.terminal.view.feature:10.3.0.202105240430"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
+		<item value="org.eclipse.wb.core.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.core.ui.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.doc.user.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.layout.group.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.rcp.SWT_AWT_support:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.rcp.doc.user.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.rcp.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.swing.doc.user.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.swing.feature:1.9.8.202203170939"/>
+		<item value="org.eclipse.wb.swt.feature:1.9.8.202203170939"/>
 		<item value="org.eclipse.wst.common.fproj:3.7.3.v202007142017"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.1.0.201406251020"/>
 		<item value="org.jboss.tools.maven.apt.feature:1.5.2.201812241535"/>
