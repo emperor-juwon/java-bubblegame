@@ -1,0 +1,34 @@
+package bubble.test.ex06;
+
+import java.awt.Color;
+import java.awt.image.BufferedImage;
+import java.io.File;
+
+import javax.imageio.ImageIO;
+
+//메인스레드 바쁨 - 키보드 이벤트를 처리하기 바쁘다. 
+//background에서 계쏙 관찰함!!
+public class BackgroundPlayerService implements Runnable {
+
+	private BufferedImage image;
+	private Player player;
+
+	public BackgroundPlayerService() {
+		this.player = player;
+
+		try {
+			image = ImageIO.read(new File("image/test.png"));
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+	}
+
+	@Override
+	public void run() {
+
+		// 색상 확인
+		Color color = new Color(image.getRGB(player.getX(), player.getY()));
+
+	}
+
+}

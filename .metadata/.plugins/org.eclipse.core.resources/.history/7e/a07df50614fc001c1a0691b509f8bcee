@@ -1,0 +1,27 @@
+package bubble.test.ex06;
+
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
+
+//메인스레드 바쁨 - 키보드 이벤트를 처리하기 바쁘다. 
+//background에서 계쏙 관찰함!!
+public class BackgroundPlayerService implements Runnable {
+
+	private BufferedImage image;
+	
+	public BackgroundPlayerService() {
+		try {
+			image = ImageIO.read("image/test.png");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
+	@Override
+	public void run() {
+
+	}
+
+}
