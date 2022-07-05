@@ -6,8 +6,8 @@
 <br/>
 
 ## 💡 프로젝트 목표
-- java 객체지향 프로그래밍의 이해 
-- java 스레드 이해
+- java 객체지향 프로그래밍의 이해 [기술블로그 포스팅](https://blog.naver.com/fwangjuwon/222796514973)
+- java 스레드 이해 [기술블로그 포스팅](https://blog.naver.com/fwangjuwon/222801002024)
 
 <br/>
 
