@@ -1,0 +1,33 @@
+package bubble.test.ex10;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Bubble extends JLabel {
+
+	//위치 상태 
+	private int x;
+	private int y;
+
+//움직임 상태
+	private boolean left;
+	private boolean right;
+	private boolean up;
+	private boolean down;
+
+	// player 속도
+	private final int SPEED = 4; // 상수는 대문자로!!
+	private final int JUMP = 4; // UP,DOWN스피드
+
+	// 벽충돌상태
+	private boolean leftWallCrash;
+	private boolean rightWallCrash;
+
+	private ImageIcon playerR, playerL;
+
+}

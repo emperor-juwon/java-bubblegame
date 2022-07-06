@@ -11,12 +11,20 @@
     <fullyQualifiedTypeName name="bubble.test.ex03.Moveable"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyListener"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="com.sun.source.tree.WhileLoopTree"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="bubble.test.ex04.BubbleFrame"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="bubble.test.ex06.BackgroundPlayerService"/>
+    <fullyQualifiedTypeName name="bubble.test.ex06.Player"/>
     <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="bubble.test.ex07.Player"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ"/>
+    <fullyQualifiedTypeName name="bubble.test.ex09.BackgroundPlayerService"/>
 </qualifiedTypeNameHistroy>
