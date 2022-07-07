@@ -1,0 +1,25 @@
+package bubble.test.ex15;
+
+import javax.swing.JLabel;
+
+public class Enemy extends JLabel implements Moveable {
+
+	@Override
+	public void left() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void right() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void up() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

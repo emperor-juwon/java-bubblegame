@@ -1,8 +1,0 @@
-package bubble.test.ex10;
-
-import javax.swing.JLabel;
-
-public class Bubble extends JLabel {
-
-	
-}
