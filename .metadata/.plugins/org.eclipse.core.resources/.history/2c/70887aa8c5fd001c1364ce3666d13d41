@@ -168,10 +168,6 @@ public class Bubble extends JLabel implements Moveable {
 			Thread.sleep(3000);
 			setIcon(bomb);
 			Thread.sleep(2000);
-			// 버블 객체 메모리에서 날리기
-			System.out.println(mContext.getPlayer().getBubbleList().size());
-			mContext.getPlayer().getBubbleList().remove(this);
-			System.out.println(mContext.getPlayer().getBubbleList().size());
 			mContext.remove(this); // bubbleframe의 bubble이 메모리에서 소멸
 			mContext.repaint(); // bubbleframe의 전체를 다시 그림(메모리에 없는건 안그림)
 		} catch (Exception e) {
@@ -186,10 +182,6 @@ public class Bubble extends JLabel implements Moveable {
 				up = false;
 				setIcon(bomb);
 				Thread.sleep(1000);
-				// 버블 객체 메모리에서 날리기
-				System.out.println(mContext.getPlayer().getBubbleList().size());
-				mContext.getPlayer().getBubbleList().remove(this);
-				System.out.println(mContext.getPlayer().getBubbleList().size());
 				mContext.remove(this);
 				mContext.repaint();
 			} catch (Exception e) {
