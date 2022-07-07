@@ -1,5 +1,7 @@
 package bubble.game.component;
 
+import java.util.List;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -17,7 +19,8 @@ public class Bubble extends JLabel implements Moveable {
 	private Player player;
 	private BackgroundBubbleService backgroundBubbleService;
 	private BubbleFrame mContext;
-	private Enemy enemy;
+	private List<Enemy> enemys;
+	private Enemy removeEnemy = null;
 
 	// 위치 상태
 	private int x;
@@ -37,7 +40,7 @@ public class Bubble extends JLabel implements Moveable {
 	public Bubble(BubbleFrame mContext) {
 		this.mContext = mContext;
 		this.player = mContext.getPlayer();
-		this.enemy = mContext.getEnemy();
+		this.enemys = mContext.getEnemys();
 		initObject();
 		initSetting();
 	}
@@ -77,13 +80,15 @@ public class Bubble extends JLabel implements Moveable {
 				break;
 			}
 
-			if (Math.abs(x - enemy.getX()) < 10 && Math.abs(y - enemy.getY()) > 0 && Math.abs(y - enemy.getY()) < 50) {
-				System.out.println("물방울과 적군 충돌");
-				if (enemy.getState() == 0) {
-					attack();
-					break;
+			for (Enemy e : enemys) {
+				if (Math.abs(x - e.getX()) < 10 && Math.abs(y - e.getY()) > 0 && Math.abs(y - e.getY()) < 50) {
+					if (e.getState() == 0) {
+						attack(e);
+						break;
+					}
 				}
 			}
+
 			try {
 				Thread.sleep(1);
 			} catch (InterruptedException e) {
@@ -106,11 +111,12 @@ public class Bubble extends JLabel implements Moveable {
 				break;
 			}
 
-			if (Math.abs(x - enemy.getX()) < 10 && Math.abs(y - enemy.getY()) > 0 && Math.abs(y - enemy.getY()) < 50) {
-				System.out.println("물방울과 적군 충돌");
-				if (enemy.getState() == 0) {
-					attack();
-					break;
+			for (Enemy e : enemys) {
+				if (Math.abs(x - e.getX()) < 10 && Math.abs(y - e.getY()) > 0 && Math.abs(y - e.getY()) < 50) {
+					if (e.getState() == 0) {
+						attack(e);
+						break;
+					}
 				}
 			}
 
@@ -154,11 +160,12 @@ public class Bubble extends JLabel implements Moveable {
 	}
 
 	@Override
-	public void attack() {
+	public void attack(Enemy e) {
 		state = 1;
-		enemy.setState(1);
+		e.setState(1);
 		setIcon(bubbled);
-		mContext.remove(enemy); // memory에서 사라지게!!
+		removeEnemy = e;
+		mContext.remove(e); // memory에서 사라지게!!
 		mContext.repaint();
 	}
 
@@ -169,9 +176,7 @@ public class Bubble extends JLabel implements Moveable {
 			setIcon(bomb);
 			Thread.sleep(2000);
 			// 버블 객체 메모리에서 날리기
-			System.out.println(mContext.getPlayer().getBubbleList().size());
 			mContext.getPlayer().getBubbleList().remove(this);
-			System.out.println(mContext.getPlayer().getBubbleList().size());
 			mContext.remove(this); // bubbleframe의 bubble이 메모리에서 소멸
 			mContext.repaint(); // bubbleframe의 전체를 다시 그림(메모리에 없는건 안그림)
 		} catch (Exception e) {
@@ -187,9 +192,8 @@ public class Bubble extends JLabel implements Moveable {
 				setIcon(bomb);
 				Thread.sleep(1000);
 				// 버블 객체 메모리에서 날리기
-				System.out.println(mContext.getPlayer().getBubbleList().size());
 				mContext.getPlayer().getBubbleList().remove(this);
-				System.out.println(mContext.getPlayer().getBubbleList().size());
+				mContext.getEnemys().remove(removeEnemy);
 				mContext.remove(this);
 				mContext.repaint();
 			} catch (Exception e) {

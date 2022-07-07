@@ -32,7 +32,7 @@ public class BackgroundPlayerService implements Runnable {
 	@Override
 	public void run() {
 
-		while (true) {
+		while (player.getState() == 0) {
 
 			// 1. bubble 충돌 체크
 			for (int i = 0; i < bubbleList.size(); i++) {
