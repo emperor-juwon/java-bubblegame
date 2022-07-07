@@ -20,7 +20,7 @@
 
 
 ## 💡구현 결과(영상 링크)
-<img width="737" alt="Screenshot_8" src="https://user-images.githubusercontent.com/97711663/177727569-2364db71-a9a3-4982-a55a-f916c165bfae.png">(https://youtu.be/Vvxn5JgScts)
+[<img width="737" alt="Screenshot_8" src="https://user-images.githubusercontent.com/97711663/177727569-2364db71-a9a3-4982-a55a-f916c165bfae.png">](https://youtu.be/Vvxn5JgScts)
 
 <br/>
 
